@@ -1,5 +1,6 @@
 "use client";
 
+import NewPost from "@/component/newPost";
 import styles from "./page.module.css";
 import Image from "next/image";
 export default function Home() {
@@ -121,7 +122,9 @@ export default function Home() {
               <span>{profile.bio}</span>
             </div>
             <div>
-              <button className={styles.addPostButton}>Add post</button>
+              <NewPost>
+                <button className={styles.addPostButton}>Add post</button>
+              </NewPost>
             </div>
           </div>
         </div>
