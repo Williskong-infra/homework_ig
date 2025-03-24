@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 
 export async function GET(request: Request) {
 
-    mongoose.connect('mongodb+srv://willis:d1PyytQQPqE8xLHA@mongodb-willis.nnrdk.mongodb.net/ig');
+    mongoose.connect(process.env.MONGO_URI as string);
 
     const posts = await Post.find();
 

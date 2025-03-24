@@ -28,8 +28,6 @@ export default function NewPost({ children }: { children: React.ReactNode }) {
 
         console.log(upload_image_result);
         
-        
-
         // const response = await fetch("/api/post/create", {
         //     method: "POST",
         //     body: JSON.stringify({ description: description, image_urls: imagesB64 }),
